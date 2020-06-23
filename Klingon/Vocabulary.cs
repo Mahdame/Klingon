@@ -16,9 +16,9 @@ namespace Klingon
                 string[] letters = line.Split(" ");
 
                 string[] result = letters
-                    .OrderBy(x => AlphabetVocabulary.AlphabetDictionary()[x.Substring(0, 1)])
-                    .ThenBy(x => AlphabetVocabulary.AlphabetDictionary()[x.Substring(1, 1)])
-                    .ThenBy(x => AlphabetVocabulary.AlphabetDictionary()[x.Substring(2, 1)])
+                    .OrderBy(x => AlphabetNumbers.AlphabetDictionary()[Convert.ToChar(x.Substring(0, 1))])
+                    .ThenBy(x => AlphabetNumbers.AlphabetDictionary()[Convert.ToChar(x.Substring(1, 1))])
+                    .ThenBy(x => AlphabetNumbers.AlphabetDictionary()[Convert.ToChar(x.Substring(2, 1))])
                     .Distinct()
                     .ToArray();
 
