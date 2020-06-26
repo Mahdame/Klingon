@@ -10,7 +10,7 @@ namespace Klingon
         {
             try
             {
-                StreamReader sr = new StreamReader("assets\\klingon-textoB.txt");
+                StreamReader sr = new StreamReader(@"D:\dev\Klingon\Klingon\assets\klingon-textoB.txt");
                 string line = sr.ReadToEnd();
                 ListsFooBar lists = new ListsFooBar();
 

@@ -9,9 +9,11 @@ namespace Klingon
     {
         public static void PrettyNumbers()
         {
+            var alphabet = Alphabet.AlphabetDictionary();
+
             try
             {
-                StreamReader sr = new StreamReader("assets\\klingon-textoB.txt");
+                StreamReader sr = new StreamReader(@"D:\dev\Klingon\Klingon\assets\klingon-textoB.txt");
                 string line = sr.ReadToEnd();
                 List<long> list = new List<long>();
                 string[] words = line.Split(" ");
@@ -25,61 +27,61 @@ namespace Klingon
                     {
                         if (i == 0)
                         {
-                            var firstNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var firstNumber = alphabet.GetValueOrDefault(letters[i]);
                             firstNumber *= 1;
                             total += firstNumber;
                         }
                         else if (i == 1)
                         {
-                            var secondNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var secondNumber = alphabet.GetValueOrDefault(letters[i]);
                             secondNumber *= 20;
                             total += secondNumber;
                         }
                         else if (i == 2)
                         {
-                            var thirdNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var thirdNumber = alphabet.GetValueOrDefault(letters[i]);
                             thirdNumber *= 400;
                             total += thirdNumber;
                         }
                         else if (i == 3)
                         {
-                            var fourthNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var fourthNumber = alphabet.GetValueOrDefault(letters[i]);
                             fourthNumber *= 8000;
                             total += fourthNumber;
                         }
                         else if (i == 4)
                         {
-                            var fifthNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var fifthNumber = alphabet.GetValueOrDefault(letters[i]);
                             fifthNumber *= 160000;
                             total += fifthNumber;
                         }
                         else if (i == 5)
                         {
-                            var sixthNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var sixthNumber = alphabet.GetValueOrDefault(letters[i]);
                             sixthNumber *= 3200000;
                             total += sixthNumber;
                         }
                         else if (i == 6)
                         {
-                            var seventhNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var seventhNumber = alphabet.GetValueOrDefault(letters[i]);
                             seventhNumber *= 64000000;
                             total += seventhNumber;
                         }
                         else if (i == 7)
                         {
-                            var eighthNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var eighthNumber = alphabet.GetValueOrDefault(letters[i]);
                             eighthNumber *= 1280000000;
                             total += eighthNumber;
                         }
                         else if (i == 8)
                         {
-                            var ninethNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var ninethNumber = alphabet.GetValueOrDefault(letters[i]);
                             ninethNumber *= 25600000000;
                             total += ninethNumber;
                         }
                         else if (i == 9)
                         {
-                            var tenthNumber = AlphabetNumbers.AlphabetDictionary().GetValueOrDefault(letters[i]);
+                            var tenthNumber = alphabet.GetValueOrDefault(letters[i]);
                             tenthNumber *= 512000000000;
                             total += tenthNumber;
                         }

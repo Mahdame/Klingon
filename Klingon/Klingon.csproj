@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="assets\AlphabetNumbers.cs">
+    <Compile Update="assets\Alphabet.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Update="assets\ListsFooBar.cs">
